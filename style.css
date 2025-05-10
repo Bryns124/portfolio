@@ -63,6 +63,7 @@ body{
   align-items: center;
   transition: top 0.3s ease-in-out;
   z-index: 1000;
+  border-bottom: 2px solid rgba(121, 230, 201, 0.3);
 }
 
 .logo {
