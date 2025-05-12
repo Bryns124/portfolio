@@ -420,7 +420,6 @@ body{
   flex-direction: column;
   align-items: center;
   width: 80%;
-  /* height: 50%; */ 
 }
 
 .skill-card:hover {
@@ -484,27 +483,6 @@ body{
   margin-bottom: 40px;
   text-align: center;
   line-height: 1.6;
-}
-
-.say-hello-btn {
-  display: inline-block;
-  padding: 18px 48px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #79e6c9;
-  background: transparent;
-  border: 2px solid #79e6c9;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s, transform 0.2s;
-  margin-top: 20px;
-  letter-spacing: 1px;
-}
-
-.say-hello-btn:hover {
-  background: #79e6c9;
-  color: #080808;
-  transform: translateY(-2px) scale(1.04);
 }
 
 .contact-methods {
@@ -654,6 +632,10 @@ body{
     width: 90%;
   }
 
+  .about-text {
+    font-size: 0.8rem;
+  }
+
   .about-right {
     margin-bottom: 30px;
   }
@@ -681,6 +663,14 @@ body{
     max-width: 300px;
   }
 
+  .tool-card h4 {
+    font-size: 1.2rem;
+  }
+  
+  .tool-card p {
+    font-size: 0.8rem;
+  }
+
   .skill-card {
     width: 100%;
     padding: 20px 15px;
@@ -689,6 +679,14 @@ body{
   .skill-logo {
     width: 72px;
     height: 72px;
+  }
+
+  .skill-card h4 {
+    font-size: 1.2rem;
+  }
+  
+  .skill-card p {
+    font-size: 0.8rem;
   }
 
   .contact-content {
