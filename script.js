@@ -1,3 +1,4 @@
+// Loading screen
 document.addEventListener('DOMContentLoaded', function() {
   const loadingScreen = document.querySelector('.loading-screen');
   const loadingText = document.querySelector('.loading-text');

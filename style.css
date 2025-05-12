@@ -60,6 +60,7 @@ body{
   top: 0;
   left: 0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   transition: top 0.3s ease-in-out;
   z-index: 1000;
@@ -124,7 +125,7 @@ body{
   justify-content: center;
   background: #080808;
   margin-top: 30px;
-
+  padding: 0%;
 }
 
 .intro-content {
@@ -594,4 +595,141 @@ body{
 
 @keyframes cursor {
   50% { border-color: transparent }
+}
+
+/* Media queries  */
+@media screen and (max-width: 768px) {
+  .loading-text {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 10px 30px;
+  }
+
+  .topnav {
+    padding: 15px 20px;
+  }
+
+  .nav-left {
+    flex: 1;
+  }
+
+  .topnav ul li a {
+    font-size: 0.75rem;
+  }
+
+  .intro-content h1 {
+    font-size: 10px;
+  }
+
+  .intro-content h2 {
+    font-size: 32px;
+  }
+
+  .intro-content h2.typing-1.start-typing {
+    width: 8.5ch;
+    animation: 
+        typing 1s steps(9),
+        cursor .4s step-end infinite alternate;
+  }
+
+  .intro-content h2.typing-2.start-typing {
+    width: 28ch;
+    animation: 
+        typing 2s steps(30),
+        cursor .4s step-end infinite alternate;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+  }
+
+  .text-container p {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .about-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 90%;
+  }
+
+  .about-right {
+    margin-bottom: 30px;
+  }
+
+  .about-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .languages-icons {
+    gap: 15px;
+  }
+
+  .language-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tools-flex {
+    gap: 15px;
+  }
+
+  .tool-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .skill-card {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .skill-logo {
+    width: 72px;
+    height: 72px;
+  }
+
+  .contact-content {
+    padding: 0 20px;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+  }
+
+  .contact-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .bottom-bar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .icon-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+  }
+}
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 480px) {
+  .intro-content h2 {
+    font-size: 24px;
+  }
+
+  .hackermonkey {
+    width: 30px;
+    height: 40px;
+  }
+
+  .resume-btn {
+    padding: 10px 24px;
+    font-size: 10px;
+  }
 }
